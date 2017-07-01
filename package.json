@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "NODE_ENV='production' webpack -p",
+    "build": "set NODE_ENV='production' webpack -p",
     "firebase-init": "firebase login && firebase init",
     "deploy": "npm run build && firebase deploy"
   },
@@ -17,6 +17,7 @@
       "react"
     ]
   },
+  "dev-tool":"source-map",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
